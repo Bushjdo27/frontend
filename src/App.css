@@ -1,0 +1,380 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Lato' sans-serif
+}
+
+body {
+    font-weight: 300;
+    line-height: 1.6;
+    color: #6D5D4B;
+}
+
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.heading-2,
+.heading-3,
+.heading-4 {
+    font-size: 3.2rem;
+    font-family: 'Lato';
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.heading-3 {
+    font-size: 2.4rem;
+}
+
+.heading-4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+
+/*================== Header ==============*/
+
+header {
+    background: #fff;
+    box-shadow: 0 2rem 5rem #f6f6f6;
+    margin-bottom: 4rem;
+}
+
+.header {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    color: #333;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+.navigation {
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+}
+
+.navigation__item {
+    padding: 0 1.5rem;
+}
+
+.navigation__item:not(:first-child) {
+    margin-left: 2.5rem;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+    text-decoration: none;
+    color: #333;
+    padding: 1rem 2.5rem;
+}
+
+.active {
+    border-bottom: .1rem solid #2998ff;
+}
+
+
+/*================== Main Content ==============*/
+
+.main {
+    width: 114rem;
+    margin: 1rem auto;
+}
+
+.content {
+    font-size: 1.6rem;
+    color: #333;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.line {
+    height: .1rem;
+    background-color: #ddd;
+    margin: 4rem 0;
+}
+
+.inforPost {
+    margin: 2rem 0;
+}
+
+.inforPost>*:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.vote {
+    cursor: pointer;
+}
+
+.choosen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choosen>* {
+    width: 30%
+}
+
+.choosen>*:not(:first-child) {
+    margin-left: 4rem;
+}
+
+input[type='radio'] {
+    margin-left: 2rem;
+}
+
+
+/*================== Add Post==============*/
+
+.Add-Post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem auto;
+    padding: 2rem;
+    font-size: 1.6rem;
+    width: 50%;
+    text-align: center;
+    border: .1rem solid #ddd;
+    border-radius: 1rem;
+    box-shadow: 0 .2rem .4rem rgba(#000, .2);
+}
+
+.form,
+.form-comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    width: 75%;
+    padding-top: 2rem;
+}
+
+.form-comment {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 4rem auto;
+    padding: 4rem;
+    border: .1rem solid #ddd;
+    border-radius: 1rem;
+}
+
+input[type="text"],
+textarea,
+select {
+    margin-bottom: 4rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    transition: all .2s;
+    font-family: 'Lato'
+}
+
+select {
+    border: .1rem solid #ddd;
+    border-radius: 1rem;
+    outline: #2998ff;
+}
+
+select:hover {
+    border: .1rem solid #2998ff;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-bottom: .1rem solid goldenrod;
+}
+
+
+/*================== Button ==============*/
+
+.btn {
+    padding: 1.5rem 6rem;
+    font-size: 1.6rem;
+    font-family: 'Roboto';
+    color: white;
+    border: .1rem solid #ddd;
+    outline: none;
+    border-radius: 1.75rem;
+    box-shadow: 0rem 1rem 2rem rgba(#000, .2);
+    transition: all .2s;
+}
+
+.btn-text,
+.btn-text:link,
+.btn-text:visited {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    border-bottom: .1rem solid #ddd;
+    border-radius: 0rem;
+    padding: 1rem 4rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.btn-submit {
+    background: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+
+.btn-comment {
+    padding: 1.5rem 4rem;
+}
+
+.btn-delete {
+    margin-top: 2rem;
+    background: linear-gradient(to right bottom, #f39316, #ec481f);
+}
+
+.btn-edit {
+    background: linear-gradient(to right bottom, #e0cb0a, goldenrod);
+}
+
+.btn:hover {
+    transform: translateY(-.5rem);
+}
+
+.btn:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0rem .5rem 1rem rgba(#000, .2);
+}
+
+.detail {
+    border-bottom: .1rem solid #2998ff;
+    margin-right: 2rem;
+}
+
+.edit {
+    border-bottom: .1rem solid goldenrod;
+    margin-right: 2rem;
+}
+
+.delete {
+    border-bottom: .1rem solid #ec481f;
+}
+
+.detail:hover {
+    background-color: #2998ff;
+    border-radius: 1.75rem;
+    color: #fff;
+}
+
+.edit:hover {
+    background-color: goldenrod;
+    border-radius: 1.75rem;
+    color: #fff;
+}
+
+.delete:hover {
+    background-color: #ec481f;
+    border-radius: 1.75rem;
+    color: #fff;
+}
+
+.Success {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    width: 100%;
+    border: .1rem solid #7ed56f;
+    border-radius: 1rem;
+    transition: all .2s;
+}
+
+.Success:hover {
+    background-color: #7ed56f;
+    color: white;
+}
+
+.Failure {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    width: 100%;
+    border: .1rem solid #ec481f;
+    border-radius: 1rem;
+    transition: all .2s;
+}
+
+.Failure:hover {
+    background-color: #ec481f;
+    color: white;
+}
+
+
+/*=============== Modal ================ */
+
+.modal {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9000;
+    transition: all .3 ease-in;
+}
+
+.Post-Edit {
+    background-color: #fff;
+    position: fixed;
+    z-index: 90001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*============== Details Content =============*/
+
+.detail-content,
+.comment {
+    width: 114rem;
+    margin: 4rem auto;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.detail-body {
+    margin: 2rem 0;
+    font-family: 'Roboto';
+    text-align: left;
+}
+
+.small_line {
+    width: 60%;
+    height: .1rem;
+    background-color: #ddd;
+    margin: 6rem auto;
+}
+
+.comment {
+    text-align: left;
+}
+
+.comment__content-timestamp {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    font-size: 1.2rem;
+}
