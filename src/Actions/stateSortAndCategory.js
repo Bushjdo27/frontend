@@ -6,7 +6,6 @@ export const sortStateManager = (sortState) =>{
     }
 }
 
-
 export const categoryManager = (category)=>{
     console.log(category)
     return {
